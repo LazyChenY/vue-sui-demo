@@ -19,3 +19,8 @@ export default {
   }
 }
 </script>
+<style>
+  .tab-item.active {
+    color: #0894ec !important;
+  }
+</style>

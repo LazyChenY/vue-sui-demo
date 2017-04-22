@@ -28,17 +28,19 @@
           type="header"
           valign="bottom"
           class-name="color-white no-border no-padding">
-          <img class='card-cover' src="//gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" alt="">
+          <img class='card-cover' src="../../../static/img/qb01.jpg" alt="">
         </v-card-item>
         <v-card-item type="content">
           <v-card-item type="content-inner">
-            <p class="color-gray">发表于 2015/01/15</p>
+            <span class="color-gray">店铺名</span>
+            <span class="color-gray">地址</span>
+            <span class="color-gray">类型</span>
             <p>此处是内容...</p>
           </v-card-item>
         </v-card-item>
         <v-card-item type="footer">
           <a href="#" class="link">赞</a>
-          <a href="#" class="link">更多</a>
+          <a href="#" class="link">评论</a>
         </v-card-item>
       </v-card>
       <v-card>

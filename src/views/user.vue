@@ -3,18 +3,18 @@
   <div class="banner">
     <div class="logo">
         <div class="logo_img">
-            <img src="../assets/img/logo.png" class="img-responsive" style="border:solid 1px #fff;border-radius: 50px;overflow:hidden;" width="64" height="64">
-            <div style="color:white;line-height: 1;">eteplus</div>
+            <img src="../assets/img/icon.jpg" class="img-responsive" style="border:solid 1px #fff;border-radius: 50px;overflow:hidden;" width="64" height="64">
+            <div style="color:white;line-height: 1;">ChenYan</div>
         </div>
         <div class="logo_txt">
             <span class="yue">我的余额(积分)</span>
             <span class="amount timer count-title" id="count-number" data-to="300" data-speed="500" data-decimals="0">300</span>
         </div>
     </div>
-    <div class="in">
+ <!--<div class="in">
         <div class="incomes">今日收入 0 积分</div>
         <div class="students">今日邀请 0 个</div>
-    </div>
+    </div> -->
   </div>
   <nav class="bar bar-tab user-tab">
     <a class="tab-item">
@@ -95,14 +95,14 @@ export default {
 .banner {
   width: 100%;
   background-color: white;
-  padding: 12.7999992px;
+  /*padding: 12.7999992px;*/
 }
 .banner .logo {
-  background-color: #ed8e07;
-  border-radius: 10px;
+  background-color: #0894ec;
+  border-radius: 4px;
   width: 100%;
   height: 110px;
-  padding: 20.2666654px 21.333332px 5.333333px;
+  padding: 0.5rem 0.5rem 0.25rem;
   box-shadow: 0 .0rem .8rem rgba(0,0,0,.3);
 }
 .banner .logo .logo_img {
