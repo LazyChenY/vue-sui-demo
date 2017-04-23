@@ -19,7 +19,7 @@
   <nav class="bar bar-tab user-tab">
     <a class="tab-item">
       <span class="icon icon-shouyi"></span>
-      <span class="tab-label">已提现</span>
+      <span class="tab-label">已兑换</span>
     </a>
     <a class="tab-item">
       <span class="icon icon-me"></span>
@@ -27,7 +27,7 @@
     </a>
     <a class="tab-item" v-link="{ path: '/user/withdraw', replace: true}">
       <span class="icon icon-shouyimingxi"></span>
-      <span class="tab-label">我要提现</span>
+      <span class="tab-label">我要兑换</span>
     </a>
   </nav>
   <div class="list-block user-list">

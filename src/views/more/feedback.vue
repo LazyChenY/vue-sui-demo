@@ -11,18 +11,20 @@
   </div> -->
   <div class="content-block">
     <div class="feedback-label">
-      <span style="color:red">*</span> 反馈内容：
+      <span style="color:red"></span> 情报正文：
     </div>
     <div class="item-input">
-      <textarea rows="7" placeholder="请输入反馈内容，不得少于五个字"></textarea>
+      <textarea rows="7" placeholder="请输入美食情报正文，不少于五个字哦~"></textarea>
     </div>
     <div class="feedback-label">
-      如需帮助，请留下您的联系电话或邮箱，谢谢！
+      指引其它小吃货们找到美食吧！
     </div>
     <div class="feedback-input">
-      <input type="text" placeholder="电话">
-      <input type="text" placeholder="邮箱">
+      <input type="text" placeholder="店铺名">
+      <input type="text" placeholder="地址">
+      <input type="text" placeholder="美食类型" id='picker'/>
     </div>
+    <p><a href="#" class="button button-round pic">添加图片</a></p>
   </div>
   <div class="submit-button">
     <button class="button button-big button-fill">提交</button>
@@ -31,12 +33,24 @@
 </template>
 
 <script>
+import $ from 'zepto'
+
 export default {
   ready () {
+    $.init()
+    $('#picker').picker({
+      // toolbarTemplate: '<header class="bar bar-nav"><button class="button button-link pull-left">按钮</button><button class="button button-link pull-right close-picker">确定</button><h1 class="title">标题</h1></header>',
+      cols: [
+        {
+          textAlign: 'center',
+          values: ['火锅', '串串', '烧烤', '干锅', '海鲜', '中餐', '西餐']
+        }
+      ]
+    })
   },
   data () {
     return {
-      title: '意见反馈'
+      title: '发布情报'
     }
   }
 }
@@ -90,9 +104,13 @@ export default {
   padding: 0 .45rem;
 }
 .feedback .submit-button button {
-  background-color: #ed8e07;
+  background-color: #0894ec;
   width: 100%;
   line-height: 2.1rem !important;
   height: 2.1rem !important;
+}
+.pic {
+  color: gray;
+  border: 1px solid gray;
 }
 </style>

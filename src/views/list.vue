@@ -3,12 +3,12 @@
     <header class="bar bar-nav">
       <h1 class='title'>美食情报</h1>
     </header>
-    <div class="bar bar-header-secondary">
+    <div class="bar bar-header-secondary search">
       <div class="searchbar">
-       <a class="searchbar-cancel">取消</a>
+       <!-- <a class="searchbar-cancel">取消</a> -->
         <div class="search-input">
           <label class="icon icon-search" for="search"></label>
-          <input type="search" id='search' placeholder='输入关键字...'/>
+          <input type="search" id='search' placeholder='输入关键字搜索...'/>
         </div>
       </div>
     </div>
@@ -76,13 +76,13 @@ export default {
     }
   },
   ready () {
+    $.init()
     for (let i = 0; i < 15; i++) {
       this.items.push({
         id: i,
         name: `demo${i + 1}`
       })
     }
-    $.init()
   },
   data () {
     return {
@@ -144,5 +144,18 @@ export default {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.search {
+  background-color: rgba(0,0,0,0.1);
+}
+.search-input {
+  background-color: #fff;
+  border-radius: 3px;
+  margin: 5px 8px;
+}
+#search {
+  outline: none;
+  border: none;
+  height: 18px;
 }
 </style>
