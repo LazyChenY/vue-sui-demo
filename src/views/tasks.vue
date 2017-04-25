@@ -37,7 +37,8 @@
     distance="55" v-pull-to-refresh="refreshMine">
       <v-layer></v-layer>
       <div class="myTasks">
-          <v-card-container v-for="task in normalTasks | orderBy 'id' -1">
+          <v-card-container v-for="task in normalTasks | orderBy 'id' -1"
+          v-link="{ path: '/more/release', replace: true}">
             <card type="header" class="task-title-blue">{{task.title}}</card>
             <card type="content">
               <card type="content-inner">{{task.content}}

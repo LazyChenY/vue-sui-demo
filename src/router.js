@@ -27,9 +27,14 @@ export default function (router) {
         require(['./views/rank'], resolve)
       }
     },
-    '/invite': {
+    // '/mySpy': {
+    //   component (resolve) {
+    //     require(['./views/mySpy'], resolve)
+    //   }
+    // },
+    '/collect': {
       component (resolve) {
-        require(['./views/invite'], resolve)
+        require(['./views/collect'], resolve)
       }
     },
     '/tasks': {
@@ -72,7 +77,7 @@ export default function (router) {
         require(['./views/more'], resolve)
       }
     },
-    '/more/feedback': {
+    '/more/release': {
       component (resolve) {
         require(['./views/more/feedback'], resolve)
       }
@@ -92,7 +97,7 @@ export default function (router) {
       router.app.isIndex = false
     }
     else {
-      let depath = toPath === '/' || toPath === '/invite' || toPath === '/rank'
+      let depath = toPath === '/' || toPath === '/collect' || toPath === '/rank' || toPath === '/mySpy'
       router.app.isIndex = depath ? 0 : 1
     }
     next()

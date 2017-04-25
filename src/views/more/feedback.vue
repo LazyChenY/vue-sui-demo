@@ -1,7 +1,8 @@
 <template>
-<div class="content feedback">
+<div class="content">
+  <div class="feedback">
   <header class="bar bar-nav">
-    <a class="button button-link button-nav pull-left" v-link="{path: '/more', replace: true}">
+    <a class="button button-link button-nav pull-left" v-link="{path: '/tasks', replace: true}">
     <span class="icon icon-left"></span>
     </a>
     <h1 class="title" v-text="title"></h1>
@@ -14,26 +15,32 @@
       <span style="color:red"></span> 情报正文：
     </div>
     <div class="item-input">
-      <textarea rows="7" placeholder="请输入美食情报正文，不少于五个字哦~"></textarea>
+      <textarea rows="5" v-model="text" placeholder="分享你的美食感言吧~"></textarea>
     </div>
     <div class="feedback-label">
       指引其它小吃货们找到美食吧！
     </div>
     <div class="feedback-input">
-      <input type="text" placeholder="店铺名">
-      <input type="text" placeholder="地址">
-      <input type="text" placeholder="美食类型" id='picker'/>
+      <input type="text" placeholder="店铺名" v-model="name">
+      <input type="text" placeholder="地址" v-model="adr">
+      <input type="text" placeholder="美食类型" id='picker' v-model="type"/>
+      <input type="file" accept="images/*">
     </div>
-    <p><a href="#" class="button button-round pic">添加图片</a></p>
+    <!-- <p><a href="#" class="button button-round pic">添加图片</a></p> -->
   </div>
   <div class="submit-button">
-    <button class="button button-big button-fill">提交</button>
+    <button class="button button-big button-fill" @click="toggle">提交</button>
   </div>
 </div>
+<my-spy :spy-name="name"  :spy-adr="adr" :spy-type="type" :spy-text="text"></my-spy>
+</div>
+<!-- <my-spy :spy-name="name"  :spy-adr="adr" :spy-type="type" :spy-text="text"></my-spy> -->
 </template>
 
 <script>
 import $ from 'zepto'
+import mySpy from '../mySpy'
+
 
 export default {
   ready () {
@@ -50,7 +57,21 @@ export default {
   },
   data () {
     return {
-      title: '发布情报'
+      title: '发布情报',
+      text: '',
+      name: '',
+      adr: '',
+      type: '',
+      spy: []
+    }
+  },
+  components: {
+    mySpy
+  },
+  methods: {
+    toggle () {
+      $('.feedback').css('display', 'none')
+      $('.container').css('display', 'block')
     }
   }
 }
@@ -69,7 +90,7 @@ export default {
 }
 .feedback .content-block {
   margin: 2.3rem 0 0 0;
-  padding: 0 .45rem;
+  padding: .2rem .45rem;
 }
 .feedback-label {
   font-size: .7rem;
@@ -110,7 +131,10 @@ export default {
   height: 2.1rem !important;
 }
 .pic {
-  color: gray;
+  /*color: gray;*/
   border: 1px solid gray;
+}
+.container {
+  display: none;
 }
 </style>

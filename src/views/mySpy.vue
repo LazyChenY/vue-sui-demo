@@ -1,59 +1,43 @@
 <template>
   <div class="container">
     <header class="bar bar-nav">
-      <h1 class='title'>美食情报</h1>
+    	<a class="button button-link button-nav pull-left" v-link="{path: '/tasks', replace: true}">
+    		<span class="icon icon-left"></span>
+    	</a>
+      <h1 class='title'>我的情报</h1>
     </header>
-    <div class="bar bar-header-secondary search">
-      <div class="searchbar">
-       <!-- <a class="searchbar-cancel">取消</a> -->
-        <div class="search-input">
-          <label class="icon icon-search" for="search"></label>
-          <input type="search" id='search' placeholder='输入关键字搜索...'/>
-        </div>
-      </div>
-    </div>
-
     <div class="content list" v-infinite-scroll="loadMore">
-    <div class="card-container" v-for="spy in spies">
+    <!-- <div class="card-container" v-for="spy in spies"> -->
+    <div class="card-container">
        <v-card>
         <v-card-item
           type="header"
           valign="bottom"
           class-name="color-white no-border no-padding">
-          <img class='card-cover' :src="spy.img" alt="">
+          <!-- <img class='card-cover' :src="spy.img" alt=""> -->
+          <img class='card-cover' src="../../static/img/qb01.jpg" alt="">
         </v-card-item>
         <v-card-item type="content">
           <v-card-item type="content-inner">
             <div class="row">
               <div class="col-60">
-                  <span class="color-gray">店铺名：</span><span>{{spy.name}}</span>
+                  <span class="color-gray">店铺名：</span><span>{{spyName}}</span>
               </div>
               <div class="col-40">
                   <span class="color-gray">类型：</span>
-                  <span style="border:1px #42b983 solid;border-radius:5px;padding:2px">{{spy.type}}</span>
+                  <span style="border:1px #42b983 solid;border-radius:5px;padding:2px">{{spyType}}</span>
               </div>
             </div>
-            <span class="color-gray">地址：{{spy.adr}}</span>
-            <p class="text">{{spy.text}}</p>
+            <span class="color-gray">地址：{{spyAdr}}</span>
+            <p class="text">{{spyText}}</p>
           </v-card-item>
         </v-card-item>
         <v-card-item type="footer">
-          <a href="#" class="link">赞</a>{{spy.like}}
-          <a href="#" class="link">评论</a>{{spy.comment}}
+          <a href="#" class="link">赞</a>
+          <a href="#" class="link">评论</a>
         </v-card-item>
     </v-card>
     </div>
-      <div class="list-block infinite-list">
-<!--         <ul>
-          <li class="item-content" v-for="item in items" track-by="$index">
-            <div class="item-media"><i class="icon icon-dianji"></i></div>
-            <div class="item-inner">
-              <div class="item-title">商品名称</div>
-              <div class="item-after">{{item.name}}</div>
-            </div>
-          </li>
-        </ul> -->
-      </div>
     </div>
   </div>
 </template>
@@ -100,6 +84,7 @@ export default {
     VCard,
     VCardItem
   },
+  props: ['spyName', 'spyText', 'spyAdr', 'spyType'],
   methods: {
     loadMore () {
       if (this.loading) {
@@ -120,7 +105,7 @@ export default {
         loader.hide()
       }, 1500)
 
-      this.$http.get('spyMore.json')
+      this.$http.get('spy.json')
       .then(({data: {code, message, data}}) => {
         this.spies = this.spies.concat(data)
         console.log(this.spies.length)
@@ -157,5 +142,10 @@ export default {
   outline: none;
   border: none;
   height: 18px;
+}
+.container {
+	/*position: relative;*/
+	/*top: 500px;*/
+	display: none;
 }
 </style>

@@ -3,7 +3,7 @@
 	"message": "success",
 	"data": [
 		{
-			"img": "../../static/img/qb02.jpg",
+			"img": "../../static/img/qb01.jpg",
 			"name": "草莓基地",
 			"adr": "龙泉驿区龙泉山草莓基地",
 			"type": "水果",
@@ -30,7 +30,7 @@
 			"comment":3
 		},
 		{
-			"img": "../../static/img/qb01.jpg",
+			"img": "../../static/img/qb04.jpg",
 			"name": "HELLO小姐定制蛋糕",
 			"adr": "青羊区宝龙广场2楼345号",
 			"type": "蛋糕",
@@ -39,7 +39,7 @@
 			"comment":6
 		},
 		{
-			"img": "../../static/img/qb04.jpg",
+			"img": "../../static/img/qb02.jpg",
 			"name": "安德鲁森",
 			"adr": "龙泉驿区师大现代花园恩图吉家1楼",
 			"type": "蛋糕",

@@ -3,7 +3,7 @@
 	"message": "success",
 	"data": [
 		{
-			"img": "../../static/img/qb02.jpg",
+			"img": "../../static/img/qb06.jpg",
 			"name": "草莓基地",
 			"adr": "龙泉驿区龙泉山草莓基地",
 			"type": "水果",
@@ -12,7 +12,7 @@
 			"comment":6
 		},
 		{
-			"img": "../../static/img/qb05.jpg",
+			"img": "../../static/img/qb07.jpg",
 			"name": "绿色农家乐",
 			"adr": "龙泉驿区龙泉山绿色农家乐",
 			"type": "家常菜",
@@ -21,7 +21,7 @@
 			"comment":5
 		},
 		{
-			"img": "../../static/img/qb03.jpg",
+			"img": "../../static/img/qb08.jpg",
 			"name": "无邪甜品",
 			"adr": "锦江区春熙路群光广场B1层123号",
 			"type": "甜品",
@@ -30,7 +30,7 @@
 			"comment":3
 		},
 		{
-			"img": "../../static/img/qb01.jpg",
+			"img": "../../static/img/qb09.jpg",
 			"name": "HELLO小姐定制蛋糕",
 			"adr": "青羊区宝龙广场2楼345号",
 			"type": "蛋糕",
@@ -39,7 +39,7 @@
 			"comment":6
 		},
 		{
-			"img": "../../static/img/qb04.jpg",
+			"img": "../../static/img/qb10.jpg",
 			"name": "安德鲁森",
 			"adr": "龙泉驿区师大现代花园恩图吉家1楼",
 			"type": "蛋糕",
