@@ -8,13 +8,13 @@
        <!-- <a class="searchbar-cancel">取消</a> -->
         <div class="search-input">
           <label class="icon icon-search" for="search"></label>
-          <input type="search" id='search' placeholder='输入关键字搜索...'/>
+          <input type="search" id='search' placeholder='输入关键字搜索...' v-model="filterKey" />
         </div>
       </div>
     </div>
 
     <div class="content list" v-infinite-scroll="loadMore">
-    <div class="card-container" v-for="spy in spies">
+    <div class="card-container" v-for="spy in filteredData">
        <v-card>
         <v-card-item
           type="header"
@@ -44,15 +44,6 @@
     </v-card>
     </div>
       <div class="list-block infinite-list">
-<!--         <ul>
-          <li class="item-content" v-for="item in items" track-by="$index">
-            <div class="item-media"><i class="icon icon-dianji"></i></div>
-            <div class="item-inner">
-              <div class="item-title">商品名称</div>
-              <div class="item-after">{{item.name}}</div>
-            </div>
-          </li>
-        </ul> -->
       </div>
     </div>
   </div>
@@ -88,12 +79,26 @@ export default {
     return {
       items: [],
       loading: false,
-      spies: []
+      spies: [],
+      filterKey: '',
+      filteredData: []
     }
   },
   computed: {
     length () {
       return this.items.length
+    },
+    filteredData: function () {
+      let filterKey = this.filterKey
+      let data = this.spies
+      if (filterKey) {
+        data = data.filter(function (row) {
+          return Object.keys(row).some(function (key) {
+            return String(row[key]).toLowerCase().indexOf(filterKey) > -1
+          })
+        })
+      }
+      return data
     }
   },
   components: {
