@@ -10,11 +10,11 @@
     <ul>
       <li style="height: 3rem;">
         <div class="item-content" style="min-height: 3rem;">
-          <div class="item-media"><img src="../../../static/img/avatar07.jpg" height="auto" style='width: 2.2rem;'></div>
+          <div class="item-media"><img src="../../../static/img/avatar09.jpg" height="auto" style='width: 2.2rem;'></div>
           <div class="item-inner" style="min-height: 3rem;">
             <div class="item-title-row">
             </div>
-            <div class="item-subtitle">头像</div>
+            <div class="item-subtitle"></div>
           </div>
         </div>
       </li>
@@ -23,7 +23,7 @@
             <div class="item-inner">
                 <div class="item-title label">昵称</div>
                 <div class="item-input">
-                    <input id="nickname" type="text" name="nickname" placeholder="用户昵称" value="abc">
+                    <input id="nickname" type="text" name="nickname" placeholder="用户昵称" value="小小鱼">
                 </div>
             </div>
         </div>
@@ -45,7 +45,7 @@
             <div class="item-inner">
                 <div class="item-title label">真实姓名</div>
                 <div class="item-input">
-                    <input id="name" type="text" name="name" placeholder="请输入真实姓名" value="一二三">
+                    <input id="name" type="text" name="name" placeholder="请输入真实姓名" value="小小鱼">
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@
             <div class="item-inner">
                 <div class="item-title label">微信号</div>
                 <div class="item-input">
-                    <input id="name" type="text" name="name" placeholder="请输入微信号" value="hhhh">
+                    <input id="name" type="text" name="name" placeholder="请输入微信号" value="54321">
                 </div>
             </div>
         </div>
@@ -66,8 +66,8 @@
                 <div class="item-title label">性别</div>
                 <div class="item-input">
                     <select name="sex">
-                        <option selected>男</option>
-                        <option >女</option>
+                        <option >男</option>
+                        <option selected>女</option>
                     </select>
                 </div>
             </div>
@@ -78,7 +78,7 @@
               <div class="item-inner">
                   <div class="item-title label">年龄</div>
                   <div class="item-input">
-                      <input id="age" type="number" name="age" placeholder="年龄">
+                      <input id="age" type="number" name="age" placeholder="18">
                   </div>
               </div>
           </div>
@@ -90,7 +90,7 @@
             <div class="item-inner">
                 <div class="item-title label">手机号</div>
                 <div class="item-input">
-                    <input id="phone" type="text"  name="phone" placeholder="手机号" >
+                    <input id="phone" type="text"  name="phone" placeholder="123456789" >
                 </div>
             </div>
         </div>
@@ -100,7 +100,7 @@
               <div class="item-inner">
                   <div class="item-title label">职业</div>
                   <div class="item-input">
-                      <input id="occupation" type="text" name="occupation" placeholder="职业">
+                      <input id="occupation" type="text" name="occupation" placeholder="学生">
                   </div>
               </div>
           </div>
@@ -110,7 +110,7 @@
               <div class="item-inner">
                   <div class="item-title label">地址</div>
                   <div class="item-input">
-                      <textarea id="address" name="address" placeholder="地址" ></textarea>
+                      <textarea id="address" name="address" placeholder="" ></textarea>
                   </div>
               </div>
           </div>

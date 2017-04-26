@@ -3,7 +3,7 @@
   <div class="banner">
     <div class="logo">
         <div class="logo_img">
-            <img src="../../static/img/avatar07.jpg" class="img-responsive" style="border:solid 1px #fff;border-radius: 50px;overflow:hidden;" width="64" height="64">
+            <img src="../../static/img/avatar09.jpg" class="img-responsive" style="border:solid 1px #fff;border-radius: 50px;overflow:hidden;" width="64" height="64">
             <div style="color:white;line-height: 1;">小小鱼</div>
         </div>
         <div class="logo_txt">
@@ -25,7 +25,7 @@
       <span class="icon icon-me"></span>
       <span class="tab-label">余额</span>
     </a>
-    <a class="tab-item" v-link="{ path: '/user/withdraw', replace: true}">
+    <a class="tab-item">
       <span class="icon icon-shouyimingxi"></span>
       <span class="tab-label">我要兑换</span>
     </a>
