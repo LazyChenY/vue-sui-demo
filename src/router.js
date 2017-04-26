@@ -27,11 +27,16 @@ export default function (router) {
         require(['./views/rank'], resolve)
       }
     },
-    // '/mySpy': {
-    //   component (resolve) {
-    //     require(['./views/mySpy'], resolve)
-    //   }
-    // },
+    '/mySpy': {
+      component (resolve) {
+        require(['./views/mySpy'], resolve)
+      }
+    },
+    '/my': {
+      component (resolve) {
+        require(['./views/my'], resolve)
+      }
+    },
     '/collect': {
       component (resolve) {
         require(['./views/collect'], resolve)

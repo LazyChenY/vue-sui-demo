@@ -8,7 +8,7 @@
     <slider :banner="banner"></slider>
     <bar class="home-bar">
       <bar-item path="/rank" label="排行榜" icon="preview"></bar-item>
-      <bar-item path="/rank" label="我的情报" icon="dianji"></bar-item>
+      <bar-item path="/my" label="我的情报" icon="dianji"></bar-item>
       <bar-item path="/collect" label="我的收藏" icon="accept"></bar-item>
     </bar>
       <v-content type="block-title" style="margin: 0 0 0.4rem;
