@@ -20,10 +20,10 @@
       </div>
       <div class="card-container">
         <div class="card">
-          <div class="card-header">card</div>
+          <div class="card-header">系统任务</div>
           <div class="card-content">
             <div class="card-content-inner">
-                这里是第2个card，下拉刷新会出现第2个card。
+                这里系统分配的第1个任务。
             </div>
           </div>
         </div>
@@ -47,10 +47,10 @@ export default {
       setTimeout(function () {
         let cardNumber = $(this.$el).find('.card').length + 1
         let cardHTML = '<div class="card">' +
-          '<div class="card-header">card' + cardNumber + '</div>' +
+          '<div class="card-header">系统任务' + cardNumber + '</div>' +
           '<div class="card-content">' +
           '<div class="card-content-inner">' +
-          '这里是第' + cardNumber + '个card，下拉刷新会出现第' + (cardNumber + 1) + '个card。' +
+          '这里是系统分配的第' + cardNumber + '个任务。' +
           '</div>' +
           '</div>' +
           '</div>'
