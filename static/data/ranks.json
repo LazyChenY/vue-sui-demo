@@ -1,0 +1,60 @@
+{
+	"code": 200,
+	"message": "success",
+	"data":  [
+        {
+          "avatar": "../../static/img/avatar09.jpg",
+          "nickname": "火锅君",
+          "point": 1320,
+          "color": "background-color: rgb(250, 250, 116);"
+        },
+        {
+          "avatar": "../../static/img/avatar01.jpg",
+          "nickname": "怎么吃也吃不胖",
+          "point": 1275,
+          "color": "background-color: rgb(159, 191, 250);"
+        },
+        {
+          "avatar": "../../static/img/avatar02.jpg",
+          "nickname": "抹茶冰淇淋",
+          "point": 1180,
+          "color": "background-color: rgb(238, 182, 166);"
+        },
+        {
+          "avatar": "../../static/img/avatar03.jpg",
+          "nickname": "辣辣妹子",
+          "point": 1170,
+          "color": "background-color: rgb(200, 200, 200);"
+        },
+        {
+          "avatar": "../../static/img/avatar04.jpg",
+          "nickname": "爱吃糖醋鱼",
+          "point": 1060,
+          "color": "background-color: rgb(200, 200, 200);"
+        },
+        {
+          "avatar": "../../static/img/avatar05.jpg",
+          "nickname": "打豆豆",
+          "point": 1020,
+          "color": "background-color: rgb(200, 200, 200);"
+        },
+            {
+          "avatar": "../../static/img/avatar06.jpg",
+          "nickname": "大脸猫",
+          "point": 1005,
+          "color": "background-color: rgb(200, 200, 200);"
+        },
+        {
+          "avatar": "../../static/img/avatar07.jpg",
+          "nickname": "小小鱼",
+          "point": 1060,
+          "color": "background-color: rgb(200, 200, 200);"
+        },
+        {
+          "avatar": "../../static/img/avatar08.jpg",
+          "nickname": "陈CC",
+          "point": 1020,
+          "color": "background-color: rgb(200, 200, 200);"
+        }
+      ]
+}

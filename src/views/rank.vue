@@ -19,7 +19,7 @@
               <div class="item-title" v-text="rank.nickname"></div>
             </div>
             <div class="rank-num" :style="rank.color">{{ $index+1 }}</div>
-            <div class="item-subtitle">总积分：{{rank.point}}</div>
+            <div class="item-subtitle color-gray">总积分：{{rank.point}}</div>
           </div>
         </li>
       </v-list>
@@ -66,30 +66,21 @@ export default {
   ready () {
     $.init()
   },
+  route: {
+    data ({to, next}) {
+      // next()
+      return this.$http.get('ranks.json')
+      .then(({data: {code, message, data}}) => {
+        this.$set('ranks', data)
+        console.log(code)
+      })
+    }
+  },
   data () {
     return {
       title: '排行榜',
       path: '/home',
-      ranks: [
-        {
-          avatar: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg',
-          nickname: 'A',
-          point: 1300,
-          color: 'background-color: red;'
-        },
-        {
-          avatar: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg',
-          nickname: 'B',
-          point: 1200,
-          color: 'background-color: blue;'
-        },
-        {
-          avatar: 'http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg',
-          nickname: 'C',
-          point: 1100,
-          color: 'background-color: purple;'
-        }
-      ]
+      ranks: []
     }
   },
   methods: {

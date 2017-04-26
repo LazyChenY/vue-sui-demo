@@ -50,7 +50,7 @@ export default {
   route: {
     data ({to, next}) {
       // next()
-      return this.$http.get('spy.json')
+      return this.$http.get('spyMore.json')
       .then(({data: {code, message, data}}) => {
         this.$set('spies', data)
         console.log(code)

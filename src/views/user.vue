@@ -3,8 +3,8 @@
   <div class="banner">
     <div class="logo">
         <div class="logo_img">
-            <img src="../assets/img/icon.jpg" class="img-responsive" style="border:solid 1px #fff;border-radius: 50px;overflow:hidden;" width="64" height="64">
-            <div style="color:white;line-height: 1;">ChenYan</div>
+            <img src="../../static/img/avatar07.jpg" class="img-responsive" style="border:solid 1px #fff;border-radius: 50px;overflow:hidden;" width="64" height="64">
+            <div style="color:white;line-height: 1;">小小鱼</div>
         </div>
         <div class="logo_txt">
             <span class="yue">我的余额(积分)</span>
