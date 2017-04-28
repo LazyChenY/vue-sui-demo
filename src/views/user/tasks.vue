@@ -59,7 +59,7 @@ export default {
   },
   data () {
     return {
-      path: '/home',
+      path: '/user',
       title: '任务列表',
       tasks: [
         {
