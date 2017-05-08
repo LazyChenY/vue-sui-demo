@@ -2,7 +2,7 @@
 <div class="rank">
   <v-nav :path="path" :title="title"></v-nav>
   <v-tabs type="tab" class-name="rank-tabs">
-    <v-tab name="point" title="积分排行" status="active"
+    <v-tab name="point" title="总积分排行" status="active"
     distance="55" v-pull-to-refresh="refreshPoint">
       <v-layer></v-layer>
       <v-content type="block-title">
@@ -24,7 +24,7 @@
         </li>
       </v-list>
     </v-tab>
-    <v-tab name="invite" title="邀请排行"
+    <v-tab name="invite" title="周积分排行"
     distance="55" v-pull-to-refresh="refreshInvite">
       <v-layer></v-layer>
       <v-content type="block-title">
